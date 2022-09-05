@@ -13,7 +13,7 @@ const Perfil = () => {
     <div className="home">
     {error && <div>{ error }</div>}
     { isPending && <div>Loading...</div>}
-    { blogs && <PerfilList blogs={blogs} title="Usuario" /> }
+    { blogs && <PerfilList blogs={blogs} /> }
     </div>
   );
 };
