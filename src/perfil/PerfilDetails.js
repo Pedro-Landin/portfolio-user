@@ -15,18 +15,6 @@ const PerfilDetails = () => {
   const [description, setDescription] = useState("");
   const [interests, setInterests] = useState("");
 
-  const handleClcikUp = (e) => {
-    e.preventDefault();
-    const blog = { name, description, interests };
-    console.log(blog);
-    fetch("http://localhost:3000/user/" + id, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(blog),
-    }).then(() => {
-      history.push("/");
-    });
-  };
 
   return (
     <div className="create">
